@@ -1,0 +1,6 @@
+framework module Pods_com_jcadrg_BlocSpot2UITests {
+  umbrella header "Pods-com.jcadrg.BlocSpot2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

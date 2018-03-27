@@ -1,0 +1,6 @@
+framework module Pods_com_jcadrg_BlocSpot2 {
+  umbrella header "Pods-com.jcadrg.BlocSpot2-umbrella.h"
+
+  export *
+  module * { export * }
+}
