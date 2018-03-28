@@ -9,14 +9,20 @@
 import UIKit
 import SwiftIcons
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "BlocSpot"
-        let leftBtn = UIBarButtonItem()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        let nib = UINib(nibName: "POITableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "POICell")
+        
+        let leftBtn = UIBarButtonItem(title: nil, style: .plain, target: self, action: #selector(goToMap))
         let rightBtn1 = UIBarButtonItem()
         let rightBtn2 = UIBarButtonItem()
         
@@ -27,11 +33,38 @@ class ViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = leftBtn
         self.navigationItem.rightBarButtonItems = [rightBtn1,rightBtn2]
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
+    }
+    
+    @objc func goToMap(){
+        self.performSegue(withIdentifier: "mainMenuToMapSegue", sender: self)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+       return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "POICell", for: indexPath) as! POITableViewCell
+        cell.POITitle.text = "Un lugar x de la vida"
+        cell.POIIcon.setIcon(icon: .linearIcons(.heart), iconSize: 15, color: UIColor.black)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
 
 }
 

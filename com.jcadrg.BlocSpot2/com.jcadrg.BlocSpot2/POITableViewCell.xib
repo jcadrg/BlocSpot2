@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="POITableViewCell" customModule="com_jcadrg_BlocSpot2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blL-zE-BDe">
+                    <rect key="frame" x="16" y="13" width="63" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="C1h-Bb-L9W"/>
+                        <constraint firstAttribute="width" constant="63" id="sxQ-zP-TcU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZm-lF-dFF">
+                    <rect key="frame" x="108" y="17" width="223" height="21"/>
+                    <accessibility key="accessibilityConfiguration" identifier="POICell"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="blL-zE-BDe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="CYR-iy-K5Z"/>
+                <constraint firstItem="blL-zE-BDe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="13" id="EOu-TJ-3By"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xZm-lF-dFF" secondAttribute="trailing" constant="44" id="khc-fo-wY2"/>
+                <constraint firstItem="xZm-lF-dFF" firstAttribute="leading" secondItem="blL-zE-BDe" secondAttribute="trailing" constant="29" id="mvh-Ml-1Yz"/>
+                <constraint firstItem="xZm-lF-dFF" firstAttribute="centerY" secondItem="blL-zE-BDe" secondAttribute="centerY" id="sEn-a7-UId"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="POIIcon" destination="blL-zE-BDe" id="p0b-58-bwT"/>
+                <outlet property="POITitle" destination="xZm-lF-dFF" id="VD4-2N-gdK"/>
+            </connections>
+            <point key="canvasLocation" x="-152.5" y="-106"/>
+        </view>
+    </objects>
+</document>

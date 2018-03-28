@@ -16,6 +16,10 @@
 		2D2D5FBE206A0110005CA881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2D5FBC206A0110005CA881 /* LaunchScreen.storyboard */; };
 		2D2D5FC9206A0110005CA881 /* com_jcadrg_BlocSpot2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2D5FC8206A0110005CA881 /* com_jcadrg_BlocSpot2Tests.swift */; };
 		2D2D5FD4206A0110005CA881 /* com_jcadrg_BlocSpot2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2D5FD3206A0110005CA881 /* com_jcadrg_BlocSpot2UITests.swift */; };
+		2D2D5FE2206AD00C005CA881 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2D5FE1206AD00B005CA881 /* MapKit.framework */; };
+		2D2D5FE4206AD043005CA881 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2D5FE3206AD043005CA881 /* MapViewController.swift */; };
+		2D2D5FE6206AF166005CA881 /* POITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2D5FE5206AF166005CA881 /* POITableViewCell.xib */; };
+		2D2D5FE8206AF18F005CA881 /* POITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2D5FE7206AF18F005CA881 /* POITableViewCell.swift */; };
 		83E32D318CB77CDCA2BA11CC /* Pods_com_jcadrg_BlocSpot2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5E303139FC95F63847EB05 /* Pods_com_jcadrg_BlocSpot2UITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +55,10 @@
 		2D2D5FCF206A0110005CA881 /* com.jcadrg.BlocSpot2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.jcadrg.BlocSpot2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2D5FD3206A0110005CA881 /* com_jcadrg_BlocSpot2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = com_jcadrg_BlocSpot2UITests.swift; sourceTree = "<group>"; };
 		2D2D5FD5206A0110005CA881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D2D5FE1206AD00B005CA881 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2D2D5FE3206AD043005CA881 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2D2D5FE5206AF166005CA881 /* POITableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = POITableViewCell.xib; sourceTree = "<group>"; };
+		2D2D5FE7206AF18F005CA881 /* POITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewCell.swift; sourceTree = "<group>"; };
 		4403908318B1F92AB61B79C9 /* Pods-com.jcadrg.BlocSpot2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.jcadrg.BlocSpot2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-com.jcadrg.BlocSpot2/Pods-com.jcadrg.BlocSpot2.debug.xcconfig"; sourceTree = "<group>"; };
 		577BB334BEE7241B6881D2B0 /* Pods_com_jcadrg_BlocSpot2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_com_jcadrg_BlocSpot2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CEACCFD0F83D1ED3DCE46C /* Pods_com_jcadrg_BlocSpot2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_com_jcadrg_BlocSpot2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2D5FE2206AD00C005CA881 /* MapKit.framework in Frameworks */,
 				1DAE801214BA441A1E04EC57 /* Pods_com_jcadrg_BlocSpot2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +142,9 @@
 				2D2D5FBA206A0110005CA881 /* Assets.xcassets */,
 				2D2D5FBC206A0110005CA881 /* LaunchScreen.storyboard */,
 				2D2D5FBF206A0110005CA881 /* Info.plist */,
+				2D2D5FE3206AD043005CA881 /* MapViewController.swift */,
+				2D2D5FE5206AF166005CA881 /* POITableViewCell.xib */,
+				2D2D5FE7206AF18F005CA881 /* POITableViewCell.swift */,
 			);
 			path = com.jcadrg.BlocSpot2;
 			sourceTree = "<group>";
@@ -158,6 +170,7 @@
 		AE07A81DC46FFBE938422D1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D2D5FE1206AD00B005CA881 /* MapKit.framework */,
 				64CEACCFD0F83D1ED3DCE46C /* Pods_com_jcadrg_BlocSpot2.framework */,
 				577BB334BEE7241B6881D2B0 /* Pods_com_jcadrg_BlocSpot2Tests.framework */,
 				9C5E303139FC95F63847EB05 /* Pods_com_jcadrg_BlocSpot2UITests.framework */,
@@ -243,6 +256,11 @@
 					2D2D5FAF206A0110005CA881 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					2D2D5FC3206A0110005CA881 = {
 						CreatedOnToolsVersion = 9.2;
@@ -281,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2D5FE6206AF166005CA881 /* POITableViewCell.xib in Resources */,
 				2D2D5FBE206A0110005CA881 /* LaunchScreen.storyboard in Resources */,
 				2D2D5FBB206A0110005CA881 /* Assets.xcassets in Resources */,
 				2D2D5FB9206A0110005CA881 /* Main.storyboard in Resources */,
@@ -458,7 +477,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2D5FE8206AF18F005CA881 /* POITableViewCell.swift in Sources */,
 				2D2D5FB6206A0110005CA881 /* ViewController.swift in Sources */,
+				2D2D5FE4206AD043005CA881 /* MapViewController.swift in Sources */,
 				2D2D5FB4206A0110005CA881 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
