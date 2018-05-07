@@ -12,6 +12,8 @@ class POITableViewCell: UITableViewCell {
 
     @IBOutlet weak var POITitle: UILabel!
     @IBOutlet weak var POIIcon: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var reviewLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

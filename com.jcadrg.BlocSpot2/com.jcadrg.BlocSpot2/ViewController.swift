@@ -58,7 +58,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "POICell", for: indexPath) as! POITableViewCell
         cell.POITitle.text = "Un lugar x de la vida"
-        cell.POIIcon.setIcon(icon: .linearIcons(.heart), iconSize: 15, color: UIColor.black)
+        cell.POIIcon.setIcon(icon: .emoji(.heartOpen), iconSize: 18, color: UIColor.black)
+        cell.distanceLabel.text = "< 1 km"
+        cell.reviewLabel.text = "Los perros dicen que este lugar es de la gran puta"
         return cell
     }
     

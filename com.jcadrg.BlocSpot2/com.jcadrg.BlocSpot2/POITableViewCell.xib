@@ -33,20 +33,47 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koF-nP-DzQ">
+                    <rect key="frame" x="16" y="53" width="63" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="Za4-1V-wFe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8k-xc-MBx">
+                    <rect key="frame" x="108" y="55" width="223" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="223" id="eKs-Lq-MDH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="N8k-xc-MBx" secondAttribute="bottom" constant="8" id="4TN-Tv-Q7A"/>
                 <constraint firstItem="blL-zE-BDe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="CYR-iy-K5Z"/>
                 <constraint firstItem="blL-zE-BDe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="13" id="EOu-TJ-3By"/>
+                <constraint firstItem="N8k-xc-MBx" firstAttribute="trailing" secondItem="xZm-lF-dFF" secondAttribute="trailing" id="Ohg-Uz-1VD"/>
+                <constraint firstItem="koF-nP-DzQ" firstAttribute="leading" secondItem="blL-zE-BDe" secondAttribute="leading" id="Xq1-Hk-R2S"/>
+                <constraint firstItem="N8k-xc-MBx" firstAttribute="leading" secondItem="xZm-lF-dFF" secondAttribute="leading" id="ZxF-Dn-XWO"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xZm-lF-dFF" secondAttribute="trailing" constant="44" id="khc-fo-wY2"/>
+                <constraint firstItem="koF-nP-DzQ" firstAttribute="top" secondItem="blL-zE-BDe" secondAttribute="bottom" constant="12" id="mDj-fV-lJT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="koF-nP-DzQ" secondAttribute="bottom" constant="10" id="mNJ-gj-Wnq"/>
                 <constraint firstItem="xZm-lF-dFF" firstAttribute="leading" secondItem="blL-zE-BDe" secondAttribute="trailing" constant="29" id="mvh-Ml-1Yz"/>
                 <constraint firstItem="xZm-lF-dFF" firstAttribute="centerY" secondItem="blL-zE-BDe" secondAttribute="centerY" id="sEn-a7-UId"/>
+                <constraint firstItem="N8k-xc-MBx" firstAttribute="top" secondItem="xZm-lF-dFF" secondAttribute="bottom" constant="17" id="vUs-dI-awC"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="POIIcon" destination="blL-zE-BDe" id="p0b-58-bwT"/>
                 <outlet property="POITitle" destination="xZm-lF-dFF" id="VD4-2N-gdK"/>
+                <outlet property="distanceLabel" destination="koF-nP-DzQ" id="cBq-ea-FI7"/>
+                <outlet property="reviewLabel" destination="N8k-xc-MBx" id="fbx-RR-whf"/>
             </connections>
             <point key="canvasLocation" x="-152.5" y="-106"/>
         </view>
