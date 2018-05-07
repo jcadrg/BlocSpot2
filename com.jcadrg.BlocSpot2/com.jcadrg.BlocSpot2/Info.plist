@@ -40,6 +40,12 @@
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Hola</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>BlocSpot quiere saber donde estás!</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>hola</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
